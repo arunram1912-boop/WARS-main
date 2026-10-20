@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: wars
+    runtime: python
+    plan: starter
+    buildCommand: echo "No third-party packages to install"
+    startCommand: python app.py
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: COOKIE_SECURE
+        value: "true"
+      - key: PANEL_WARS_DB
+        value: /var/data/panel_wars.sqlite3
+    disk:
+      name: wars-data
+      mountPath: /var/data
+      sizeGB: 1

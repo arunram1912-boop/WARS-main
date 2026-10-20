@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+*.log
+localhost-run_known_hosts
+probe.txt
+keep-wars-running.ps1
+.vercel/
+dist/
+.env
+.env.*
+!.env.example
